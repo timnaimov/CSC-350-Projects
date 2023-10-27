@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+body {background-color: lightblue;}
+</style>
+<script>
+function validate()
+{
+	if(document.getElementById("EMAIL").value == '')
+	{
+		alert("EMAIL FIELD IS EMPTY");
+		return false;
+	}
+	else
+		if(document.getElementById("PASSWORD").value == '')
+		{
+			alert("PASSWORD FIELD IS EMPTY");
+			return false;
+		}
+		else
+			if(document.getElementById("FIRSTNAME").value == '')
+			{
+				alert("FIRSTNAME FIELD IS EMPTY");
+				return false;
+			}
+			else
+                if(document.getElementById("LASTNAME").value == '')
+                {
+                alert("Area LASTNAME IS EMPTY");
+                return false;
+                }
+                else
+                    return true;
+}
+</script>
+</head>
+<body>
+<form action="StudentInsert.php" method="post" onsubmit="return validate();">
+<table>
+<tr><td>EMAIL</td><td><input type="text" name="EMAIL" id="EMAIL"></td></tr>
+<tr><td>PASSWORD</td><td><input type="text" name="PASSWORD" id="PASSWORD"></td></tr>
+<tr><td>FIRSTNAME</td><td><input type="text" name="FIRSTNAME" id="FIRSTNAME"></td></tr>
+<tr><td>LASTNAME</td><td><input type="text" name="LASTNAME" id="LASTNAME"></td></tr>
+<tr colspan = "2"><td><input type="submit" value="SUBMIT"></td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2021-11-11" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="3.1.3102" locale="en_US">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Name" width="167" order="0"/>
+        <field id="tpd4" name="Begin date" width="65" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
+        <timeline>
+            <![CDATA[0]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#000000]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Assign Tasks" color="#8cb6ce" meeting="false" start="2021-11-15" duration="2" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true"/>
+        <task id="54" name="Create Group Github Account" color="#8cb6ce" meeting="false" start="2021-11-15" duration="2" complete="0" thirdDate="2021-11-11" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Analysis" meeting="false" start="2021-11-15" duration="9" complete="0" expand="true">
+            <task id="1" name="Create DFD" color="#8cb6ce" meeting="false" start="2021-11-15" duration="6" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" name="Create ERD" color="#8cb6ce" meeting="false" start="2021-11-17" duration="6" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" name="Submit Analysis Documents" color="#8cb6ce" meeting="true" start="2021-11-26" duration="0" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="12" name="Design" meeting="false" start="2021-11-23" duration="8" complete="0" expand="true">
+            <task id="3" name="Create Interface" color="#8cb6ce" meeting="false" start="2021-11-23" duration="5" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" name="Create Data Dictionary" color="#8cb6ce" meeting="false" start="2021-11-25" duration="5" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" name="Submit Design Documents" color="#8cb6ce" meeting="true" start="2021-12-03" duration="0" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="13" name="Development" color="#000000" meeting="false" start="2021-11-30" duration="14" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true">
+            <task id="7" name="Develop Software" color="#8cb6ce" meeting="false" start="2021-11-30" duration="14" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true"/>
+            <task id="8" name="Develop Database" color="#8cb6ce" meeting="false" start="2021-12-02" duration="5" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true"/>
+            <task id="58" name="Submit Database Schema" color="#8cb6ce" meeting="true" start="2021-12-09" duration="0" complete="0" thirdDate="2021-11-11" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="41" name="Testing" color="#8cb6ce" meeting="false" start="2021-11-30" duration="14" complete="0" thirdDate="2021-11-11" thirdDate-constraint="0" expand="true">
+            <task id="9" name="Develop Test Data" color="#8cb6ce" meeting="false" start="2021-11-30" duration="4" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true">
+                <depend id="45" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="45" name="Test Software" color="#8cb6ce" meeting="false" start="2021-12-06" duration="10" complete="0" thirdDate="2021-11-11" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="18" name="Deliver System" color="#8cb6ce" meeting="true" start="2021-12-20" duration="0" complete="0" thirdDate="2021-11-15" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
